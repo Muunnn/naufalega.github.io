@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="./src/style/global.css"/>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navibar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/Muunnn" target="_blank">Github</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMobileNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="profile-img">
+                <img src="./src/assets/images/profile.jpg" alt="Your Name" />
+            </div>
+            <h1 class="glowingTitle">Naufal Ega</h1>
+            <p class="subtitle">Web Dev, Android Dev & Data Scientist</p>
+            <div class="social-links">
+                <a href="https://github.com/Muunnn" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/naufalega/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCncQnnX0BmHlY_5QlJaDtMg" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm <strong>Naufal Ega</strong>, currently a 5th-semester Informatics student at UNS with a science background (MIPA). 
+                        I have a deep interest in data science, web development, and drone technology. My dream is to work as a professional 
+                        data scientist, helping organizations make data-driven decisions and optimizing strategies for pollution mitigation 
+                        and policy improvements.
+                    </p>
+
+                    <p>
+                        I have participated in various programs, including the <strong>MSIB 7 Data Science Program</strong> and a 
+                        <strong>Data Analyst Bootcamp with Smartpath</strong>. My skills include Python, Kotlin, JavaScript, SQL, 
+                        Tableau, and drone flight controller integration with Pixhawk.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Laravel</span>
+                        <span>Node.js</span>
+                        <span>Phyton</span>
+                        <span>Kotlin</span>
+                        <span>SQL</span>
+                        <span>Tableau</span>
+                        <span>Looker Studio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Drone GPS Project -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Drone GPS Vehicle Detection</h3>
+                    <p>Developed an Android application in Kotlin that integrates Google Maps and Pixhawk GPS to detect and track vehicle locations.</p>
+                    <div class="tech-stack">
+                        <span>Kotlin</span>
+                        <span>MAVLink</span>
+                        <span>Google Maps API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Muunnn/AkashaSevaBUV" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMDB Analysis Project -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>IMDB Data Analysis</h3>
+                    <p>Analyzed the impact of the number of episodes on the ratings of TV series using the IMDB dataset and visualized insights using Tableau.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Tableau</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1BKhC7dnF7Chkq4Ea5FzMRLhZsFmM7_ka/view?usp=sharing" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OECD Dashboard Project -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>OECD Pollution Dashboard</h3>
+                    <p>Created a Tableau dashboard to visualize trends in fossil fuel support and cluster countries based on pollution data.</p>
+                    <div class="tech-stack">
+                        <span>Tableau</span>
+                        <span>BigQuery</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://lookerstudio.google.com/reporting/b629a2c1-3512-49ab-9b3e-d2dfc272e01a/page/p_3nzm3dewmd" target="_blank">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="certifications-section">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>MSIB 7 Data Science Program</h4>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Data Analyst Bootcamp - Smartpath</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Naufal Ega. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
